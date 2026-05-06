@@ -14,3 +14,9 @@
 2026-05-06 09:58:14.536 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
 2026-05-06 09:58:14.537 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1006 ms
 2026-05-06 09:58:15.203 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8085 (http) with context path ''
+2026-05-06 13:00:34.482 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8085 (http)
+2026-05-06 13:00:34.493 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-06 13:00:34.493 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-06 13:00:34.553 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-06 13:00:34.554 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 990 ms
+2026-05-06 13:00:35.214 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8085 (http) with context path ''
