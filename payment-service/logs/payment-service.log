@@ -1,0 +1,16 @@
+2026-05-06 09:07:37.986 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-06 09:07:38.005 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-06 09:07:38.006 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-06 09:07:38.075 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-06 09:07:38.076 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1502 ms
+2026-05-06 09:07:38.831 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-06 09:08:10.557 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-06 09:08:10.557 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-06 09:08:10.559 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
+2026-05-06 09:08:11.565 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource [ac8ba40d-f825-4461-82bd-bc6a75c83bfe] - Init duration for springdoc-openapi is: 446 ms
+2026-05-06 09:58:14.454 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8085 (http)
+2026-05-06 09:58:14.487 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-06 09:58:14.487 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-06 09:58:14.536 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-06 09:58:14.537 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1006 ms
+2026-05-06 09:58:15.203 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8085 (http) with context path ''

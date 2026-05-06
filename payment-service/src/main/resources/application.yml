@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: payment-service
+
+external:
+  service:
+    # URL will be provided dynamically via request parameters
+
+
+server:
+  port: 8085
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: alpha
+    tags-sorter: alpha
+
+logging:
+  level:
+    root: INFO
+    com.example.paymentservice: DEBUG

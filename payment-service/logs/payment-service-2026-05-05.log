@@ -1,0 +1,124 @@
+2026-05-05 08:57:48.938 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 08:57:48.963 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 08:57:48.964 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 08:57:49.055 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 08:57:49.056 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 2686 ms
+2026-05-05 08:57:50.770 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-05 08:57:50.861 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 08:58:21.351 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 08:58:21.352 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-05 08:58:21.354 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
+2026-05-05 08:59:18.595 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 08:59:18.610 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 08:59:18.611 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 08:59:18.692 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 08:59:18.693 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 2421 ms
+2026-05-05 08:59:19.545 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-05 08:59:19.621 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 09:01:50.935 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 09:01:50.952 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 09:01:50.955 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 09:01:51.058 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 09:01:51.058 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 3085 ms
+2026-05-05 09:01:53.358 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-05 09:01:53.465 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 09:07:30.303 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 09:07:30.318 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 09:07:30.318 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 09:07:30.393 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 09:07:30.393 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1674 ms
+2026-05-05 09:07:31.523 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-05 09:07:31.673 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 09:08:01.368 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 09:08:01.380 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 09:08:01.380 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 09:08:01.449 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 09:08:01.449 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 2355 ms
+2026-05-05 09:08:02.182 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-05 09:08:02.257 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 09:08:32.161 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 09:08:32.167 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-05 09:08:32.178 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 9 ms
+2026-05-05 09:08:34.152 [http-nio-8080-exec-10] INFO  o.s.api.AbstractOpenApiResource [0de5f158-dcf9-4e4e-9e72-23eb2bba59d2] - Init duration for springdoc-openapi is: 459 ms
+2026-05-05 09:12:57.607 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 09:12:57.630 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 09:12:57.631 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 09:12:57.741 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 09:12:57.741 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 2170 ms
+2026-05-05 09:12:59.217 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 09:12:59.322 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 09:12:59.322 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-05 09:12:59.324 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2026-05-05 09:12:59.907 [http-nio-8080-exec-4] INFO  o.s.api.AbstractOpenApiResource [1b781b7b-d5f5-4c47-8c91-9d6e79d0b06d] - Init duration for springdoc-openapi is: 293 ms
+2026-05-05 10:06:51.541 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 10:06:51.557 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 10:06:51.557 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 10:06:51.636 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 10:06:51.636 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 2162 ms
+2026-05-05 10:06:52.227 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 10:06:58.446 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 10:06:58.446 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-05 10:06:58.448 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
+2026-05-05 10:06:59.482 [http-nio-8080-exec-4] INFO  o.s.api.AbstractOpenApiResource [553a933d-e5de-47e0-8c9a-4a9ea1dd322e] - Init duration for springdoc-openapi is: 829 ms
+2026-05-05 10:10:22.560 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 10:10:22.574 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 10:10:22.575 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 10:10:22.653 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 10:10:22.654 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 2190 ms
+2026-05-05 10:10:23.220 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 10:10:38.588 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 10:10:38.591 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-05 10:10:38.592 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 0 ms
+2026-05-05 10:22:40.035 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 10:22:40.051 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 10:22:40.052 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 10:22:40.257 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 10:22:40.258 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 2006 ms
+2026-05-05 10:22:41.085 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 10:22:53.785 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 10:22:53.786 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-05 10:22:53.787 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2026-05-05 10:22:54.954 [http-nio-8080-exec-3] INFO  o.s.api.AbstractOpenApiResource [52fa0b82-d1cf-4352-bf4e-e5405b56889c] - Init duration for springdoc-openapi is: 520 ms
+2026-05-05 10:43:02.718 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 10:43:02.734 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 10:43:02.734 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 10:43:02.800 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 10:43:02.800 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 973 ms
+2026-05-05 10:43:03.194 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 10:43:09.306 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 10:43:09.306 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-05 10:43:09.308 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
+2026-05-05 10:43:10.390 [http-nio-8080-exec-4] INFO  o.s.api.AbstractOpenApiResource [f6ec8640-e5a7-472c-86d2-4cabe1a4cfc8] - Init duration for springdoc-openapi is: 284 ms
+2026-05-05 11:11:52.311 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 11:11:52.313 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat initialized with port 8080 (http)
+2026-05-05 11:11:52.499 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 11:11:52.501 [main] INFO  o.a.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-05-05 11:11:52.505 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 11:11:52.505 [main] INFO  o.a.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-05 11:11:53.466 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 11:11:53.471 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 16869 ms
+2026-05-05 11:11:53.476 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2026-05-05 11:11:53.480 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 16885 ms
+2026-05-05 11:12:00.183 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-05-05 11:12:00.362 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] - Tomcat started on port 8080 (http) with context path ''
+2026-05-05 11:12:00.421 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger [] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-05 11:12:00.652 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter [] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-05-05 11:12:18.599 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 11:12:18.603 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-05-05 11:12:18.619 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet [] - Completed initialization in 13 ms
+2026-05-05 11:12:26.511 [http-nio-8080-exec-8] INFO  o.s.api.AbstractOpenApiResource [6eaa8931-5803-463e-a7c2-cfca301ddc20] - Init duration for springdoc-openapi is: 2603 ms
