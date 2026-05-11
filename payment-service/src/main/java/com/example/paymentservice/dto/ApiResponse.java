@@ -22,6 +22,8 @@ public class ApiResponse {
     public static class Metrics {
         private String outboundRequestTime; // Duration of the external call
         private String overallExecutionTime; // Total time taken by the service
+        private String traceRoute; // Path of the request
+        private String region; // Region where external call was made
         private String timestamp; // Current time
     }
 }
