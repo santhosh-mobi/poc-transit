@@ -63,18 +63,33 @@ public class TraceLogger {
 
             String line;
             while ((line = reader.readLine()) != null) {
-                // Regex to capture hostname and IP: "hostname [1.2.3.4]" or just "1.2.3.4"
-                java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("([a-zA-Z0-9.-]+)\\s*\\[?(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\]?").matcher(line);
-                
-                if (matcher.find()) {
-                    String nameOrIp = matcher.group(1);
-                    String ip = matcher.group(2);
+                // Only process lines that start with a hop number
+                if (line.trim().matches("^\\d+.*")) {
+                    // 1. Extract the first latency value found on the line
+                    String latency = "N/A";
+                    java.util.regex.Matcher latMatcher = java.util.regex.Pattern.compile("(\\d+)\\s*ms").matcher(line);
+                    if (latMatcher.find()) {
+                        latency = latMatcher.group(1) + "ms";
+                    } else if (line.contains("<1 ms")) {
+                        latency = "<1ms";
+                    }
+
+                    // 2. Extract Host and IP
+                    java.util.regex.Matcher hostMatcher = java.util.regex.Pattern.compile("([a-zA-Z0-9.-]+)\\s*\\[?(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\]?").matcher(line);
                     
-                    // If hostname and IP are the same, just show IP. Otherwise show both.
-                    String display = nameOrIp.equalsIgnoreCase(ip) ? ip : nameOrIp + " (" + ip + ")";
-                    
-                    if (!route.contains(display)) {
-                        route.add(display + " - " + detectRegionByIp(ip));
+                    if (hostMatcher.find()) {
+                        String nameOrIp = hostMatcher.group(1);
+                        String ip = hostMatcher.group(2);
+                        
+                        String display = nameOrIp.equalsIgnoreCase(ip) ? ip : nameOrIp + " (" + ip + ")";
+                        String region = detectRegionByIp(ip);
+                        
+                        // Format: "Host (IP) [Latency] - Region"
+                        String detailedHop = String.format("%s [%s] - %s", display, latency, region);
+                        
+                        if (!route.contains(detailedHop)) {
+                            route.add(detailedHop);
+                        }
                     }
                 }
             }
