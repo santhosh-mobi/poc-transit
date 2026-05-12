@@ -47,6 +47,51 @@ public class TraceLogger {
         }
     }
     
+    private static final java.util.regex.Pattern IP_PATTERN = java.util.regex.Pattern.compile("(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})");
+
+    public java.util.List<String> getRealRoute(String url) {
+        java.util.List<String> route = new java.util.ArrayList<>();
+        try {
+            java.net.URI uri = new java.net.URI(url);
+            String host = uri.getHost();
+            if (host == null) host = url;
+
+            // Removed -d to enable hostname resolution. 
+            // Limited to -h 5 to keep the response time somewhat reasonable.
+            Process process = Runtime.getRuntime().exec("tracert -h 5 " + host);
+            java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.InputStreamReader(process.getInputStream()));
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                // Regex to capture hostname and IP: "hostname [1.2.3.4]" or just "1.2.3.4"
+                java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("([a-zA-Z0-9.-]+)\\s*\\[?(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\]?").matcher(line);
+                
+                if (matcher.find()) {
+                    String nameOrIp = matcher.group(1);
+                    String ip = matcher.group(2);
+                    
+                    // If hostname and IP are the same, just show IP. Otherwise show both.
+                    String display = nameOrIp.equalsIgnoreCase(ip) ? ip : nameOrIp + " (" + ip + ")";
+                    
+                    if (!route.contains(display)) {
+                        route.add(display + " - " + detectRegionByIp(ip));
+                    }
+                }
+            }
+        } catch (Exception e) {
+            route.add("Trace failed: " + e.getMessage());
+        }
+        return route;
+    }
+
+    private String detectRegionByIp(String ip) {
+        if (ip.startsWith("192.168") || ip.startsWith("10.")) return "Local Network";
+        if (ip.startsWith("14.141")) return "India VSNL";
+        if (ip.startsWith("54.81")) return "AWS Virginia";
+        if (ip.startsWith("13.228")) return "AWS Singapore";
+        return "Public Gateway";
+    }
+
     public String buildVisualRoute(String... nodes) {
         return String.join(" ➔ ", nodes);
     }

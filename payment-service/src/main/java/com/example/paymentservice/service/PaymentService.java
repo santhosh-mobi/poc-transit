@@ -47,7 +47,7 @@ public class PaymentService {
         Instant overallEnd = Instant.now();
         String traceRoute = traceLogger.buildVisualRoute("Client", "PaymentService", url, "Client");
         
-        return buildApiResponse(result, outboundStart, outboundEnd, overallStart, overallEnd, traceRoute, targetRegion);
+        return buildApiResponse(result, outboundStart, outboundEnd, overallStart, overallEnd, traceRoute, targetRegion, url);
     }
 
     public ApiResponse proxyRequest(ProxyRequest proxyRequest) {
@@ -76,23 +76,26 @@ public class PaymentService {
         Instant overallEnd = Instant.now();
         String traceRoute = traceLogger.buildVisualRoute("Client", "PaymentService", proxyRequest.getUrl(), "Client");
         
-        return buildApiResponse(result, outboundStart, outboundEnd, overallStart, overallEnd, traceRoute, targetRegion);
+        return buildApiResponse(result, outboundStart, outboundEnd, overallStart, overallEnd, traceRoute, targetRegion, proxyRequest.getUrl());
     }
 
-    private ApiResponse buildApiResponse(Object data, Instant outStart, Instant outEnd, Instant allStart, Instant allEnd, String traceRoute, String region) {
+    private ApiResponse buildApiResponse(Object data, Instant outStart, Instant outEnd, Instant allStart, Instant allEnd, String traceRoute, String region, String url) {
         long outboundDuration = Duration.between(outStart, outEnd).toMillis();
         long overallDuration = Duration.between(allStart, allEnd).toMillis();
         
         traceLogger.logStep("SERVICE_COMPLETE", String.format("Overall Journey took %dms", overallDuration));
 
+        boolean isReachable = true;
+        if (data instanceof Map && ((Map<?, ?>) data).containsKey("error")) {
+            isReachable = false;
+        }
+
         return ApiResponse.builder()
                 .data(data)
-                .metrics(ApiResponse.Metrics.builder()
-                        .outboundRequestTime(outboundDuration + " ms")
-                        .overallExecutionTime(overallDuration + " ms")
-                        .traceRoute(traceRoute)
-                        .region(region)
-                        .timestamp(Instant.now().toString())
+                .diagnostics(ApiResponse.Diagnostics.builder()
+                        .latency(overallDuration + "ms")
+                        .isReachable(isReachable)
+                        .route(traceLogger.getRealRoute(url))
                         .build())
                 .build();
     }

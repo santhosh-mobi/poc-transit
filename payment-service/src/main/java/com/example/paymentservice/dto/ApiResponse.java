@@ -13,7 +13,17 @@ import java.util.Map;
 @AllArgsConstructor
 public class ApiResponse {
     private Object data;
-    private Metrics metrics;
+    private Diagnostics diagnostics;
+
+    @Data
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class Diagnostics {
+        private String latency;
+        private boolean isReachable;
+        private java.util.List<String> route;
+    }
 
     @Data
     @Builder
